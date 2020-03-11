@@ -2,7 +2,7 @@
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-#configuring powerline
+configuring powerline
 function _update_ps1() {
     PS1=$(powerline-shell $?)
 }

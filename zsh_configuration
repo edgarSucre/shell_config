@@ -1,0 +1,22 @@
+#setting GOPATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+#configuring powerline go
+function powerline_precmd() {
+    #PS1="$($GOPATH/bin/powerline-go -error $? -shell zsh -cwd-max-depth 3 -modules venv,ssh,cwd,perms,hg,jobs,exit,root -eval -modules-right git,time)"
+    eval "$(powerline-go -shell zsh -cwd-max-depth 3 -modules venv,ssh,cwd,perms,hg,jobs,exit,newline,root -eval -modules-right git,time)"
+}
+
+function install_powerline_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "powerline_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(powerline_precmd)
+}
+
+if [ "$TERM" != "linux" ]; then
+    install_powerline_precmd
+fi
