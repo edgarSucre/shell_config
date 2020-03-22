@@ -1,6 +1,7 @@
 #setting GOPATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GOWORK=$GOPATH/src/github.com/edgarsucre
 
 #configuring powerline go
 function powerline_precmd() {
@@ -20,3 +21,5 @@ function install_powerline_precmd() {
 if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
+
+alias gotest="go test ./..."
