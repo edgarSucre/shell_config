@@ -22,4 +22,4 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 
-alias gotest="go test ./..."
+alias gotest="go test ./... count=1"
