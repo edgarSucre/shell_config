@@ -2,17 +2,8 @@
     "go.formatTool": "goimports",
     "go.languageServerExperimentalFeatures": {},
     "go.useLanguageServer": true,
-    "workbench.colorTheme": "Community Material Theme High Contrast",
-    "editor.fontSize": 15,
-    "protoc": {
-        "path": "/usr/bin/protoc",
-        "compile_on_save": true
-    },
-    "clang-format.executable": "/usr/bin/clang-format",
-    "editor.formatOnSave": true,
-    "window.zoomLevel": 0,
     "todo-tree.tree.showScanModeButton": false,
-    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Material Theme High Contrast",
     "go.delveConfig": {
     
         "dlvLoadConfig": {
@@ -25,7 +16,9 @@
         "apiVersion": 2,
         "showGlobalVariables": false
     },
-    "go.alternateTools": {
-    
-    }
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'FuraMono-Regular Powerline','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": null,
+    "terminal.integrated.fontFamily": "'Roboto Mono for Powerline'"
+
 }
