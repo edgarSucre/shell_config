@@ -1,0 +1,31 @@
+{
+    "go.formatTool": "goimports",
+    "go.languageServerExperimentalFeatures": {},
+    "go.useLanguageServer": true,
+    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "editor.fontSize": 15,
+    "protoc": {
+        "path": "/usr/bin/protoc",
+        "compile_on_save": true
+    },
+    "clang-format.executable": "/usr/bin/clang-format",
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "todo-tree.tree.showScanModeButton": false,
+    "files.autoSave": "afterDelay",
+    "go.delveConfig": {
+    
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 64,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": false
+    },
+    "go.alternateTools": {
+    
+    }
+}
