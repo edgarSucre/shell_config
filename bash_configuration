@@ -4,8 +4,6 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 #setting GOPATH
 export GOPATH=$HOME/go
 
-export GOPRIVATE="github.com/MasterVentures"
-
 #setting GO Powerline
 function _update_ps1() {
     PS1="$($GOPATH/bin/powerline-go -cwd-max-depth 3 -modules venv,ssh,cwd,perms,hg,jobs,exit,newline,root,git -error $?)"
